@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  /* Paleta Oficial - Manual da Marca Eula Empauta */
+  --color-creme: #FAF6EE;
+  --color-laranja-solar: #E05A2B;
+  --color-dourado: #E8A846;
+  --color-verde-profundo: #2E5B3D;
+  --color-magenta: #B83278;
+  --color-azul-petroleo: #008B8B;
+  --color-turquesa: #1FA6A0;
+  --color-roxo-mercurio: #6D4BA8;
+
+  /* Tipografia */
+  --font-serif: "The Seasons", Georgia, serif;
+  --font-sans: "Josefin Sans", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-creme);
+    color: var(--color-verde-profundo);
+    font-family: var(--font-sans);
+  }
+
+  /* Regra estrita do manual: ausência de caixas altas */
+  body {
+    text-transform: lowercase;
+  }
+}
